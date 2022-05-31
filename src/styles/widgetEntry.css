@@ -1,0 +1,29 @@
+.entry-body {
+    width: 100%;
+    align-items: center;
+}
+
+.entry-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.entry-right-body {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.entry-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #c9d0c3;
+    margin: 8px 0px 0px;
+}
+
+.entry-subtitle {
+    font-weight: 400;
+    font-size: 11px;
+    color: #c4d0e37c;
+}

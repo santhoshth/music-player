@@ -1,0 +1,137 @@
+.fav-container {
+    width: 94%;
+    height: 89%;
+    margin: 3%;
+    border-radius: 15px;
+    background-color: rgb(30, 42, 62);
+    background: linear-gradient(0deg,
+            rgba(30, 42, 62, 1) 0%,
+            rgba(54, 69, 98, 0.1) 100%);
+    -webkit-backdrop-filter: blur(12.5px);
+    backdrop-filter: blur(12.5px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav {
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.fav-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    margin: 6px 0px 0px;
+}
+
+.fav-heading {
+    justify-content: space-between;
+    width: 96%;
+    padding: 0.5% 2% 0.5% 2%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-items: center;
+    border-radius: 3px;
+    border-bottom: 1px solid #c4d0e37c;
+}
+
+.fav-list {
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.fav-list::-webkit-scrollbar {
+    display: none;
+}
+
+.fav-track-name {
+    width: 75%;
+    text-overflow: ellipsis;
+}
+
+.fav-item p {
+    margin: 3px;
+}
+
+.fav-item {
+    justify-content: space-between;
+    width: 96%;
+    padding: 0.5% 2% 0.5% 2%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.fav-item:hover {
+    transform: scale(0.99);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fav-track-duration {
+    width: 7%;
+    align-items: right;
+    justify-content: right;
+}
+
+.fav-track-album {
+    width: 26%;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.fav-track-date {
+    width: 15%;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+
+
+
+
+.fav-entry-body {
+    width: 45%;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+
+.fav-entry-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.fav-entry-right-body {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fav-entry-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #c9d0c3;
+    margin: 8px 0px 0px;
+}
+
+.fav-entry-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    color: #c4d0e37c;
+}

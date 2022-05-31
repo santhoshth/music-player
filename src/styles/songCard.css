@@ -1,0 +1,14 @@
+.songCard-body {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+    min-height: 62%;
+    max-height: 65%;
+    background-color: #27354d;
+    border-radius: 30px;
+    border-bottom-right-radius: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}

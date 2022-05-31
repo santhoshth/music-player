@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Home from "./screens/home";
+import Login from "./screens/login";
+import { setClientToken } from "./spotify";
 
 function App() {
+  const [token, setToken] = useState(window.localStorage.getItem("token"));
+
+  useEffect(() => {
+    console.log(token)
+    const hash = window.location.hash;
+    window.location.hash = "";
+    if (!token && hash) {
+      const _token = hash.split('&')[0].split('=')[1];
+      window.localStorage.setItem('token', _token)
+      setToken(_token);
+      setClientToken(_token);
+    } else {
+      setClientToken(token);
+    }
+  }, [token])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {!token ? <Login /> :
+        <Home />}
     </div>
   );
 }
